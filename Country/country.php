@@ -30,5 +30,6 @@ class Country
     // Setters (nom et population)
     public function setName($name) { $this->name = $name; }
     public function setPopulation($population) { $this->population = $population; }
+
 }
 
