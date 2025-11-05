@@ -22,7 +22,7 @@ class Creature
         $opponent->receiveDamage($damage);
     }
 
-    // Méthode recevoir des dégâts
+    // Méthode dégâts
     public function receiveDamage(int $damage): void
     {
         $this->health -= $damage;
@@ -30,13 +30,13 @@ class Creature
         echo "{$this->name} reçoit {$damage} dégâts. Santé restante : {$this->health}.<br>";
     }
 
-    // Vérifie si la créature est en vie
+    // Vérifie si alive
     public function isAlive(): bool
     {
         return $this->health > 0;
     }
 
-    // Cri de la créature (à redéfinir)
+    // Cri
     public function scream(): string
     {
         return "{$this->name} pousse un cri !";

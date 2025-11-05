@@ -24,7 +24,7 @@ class Mage extends Creature
         parent::__construct($name, 100, 30, 5);
     }
 
-    // Inflige +10 dégâts
+    //  +10 dégâts
     public function attack(Creature $opponent): void
     {
         $damage = max(0, ($this->strength + 10) - $opponent->defense);
