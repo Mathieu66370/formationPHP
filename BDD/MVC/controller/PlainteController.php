@@ -10,4 +10,12 @@ class PlainteController{
         $plaintes=$this->plainte->getAllPlaintes();
         include ("./view/liste_plainte.php");
     }
+
+    public function addPlainte(){
+        include("./view/ajouter_plainte.php");
+    }
+    public function showPlainte($id){
+        $plainte=$this->plainte->showOnePlainte($id);
+        include("./view/show_plainte.php");
+    }
 }
